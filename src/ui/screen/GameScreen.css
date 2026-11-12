@@ -1,0 +1,38 @@
+.game-screen {
+  --content-max-width: 60rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  width: 100%;
+  max-width: var(--content-max-width);
+  height: 100%;
+  margin-inline: auto;
+  padding-block: max(var(--space-3), env(safe-area-inset-top))
+    max(var(--space-3), env(safe-area-inset-bottom));
+  padding-inline: max(var(--space-4), env(safe-area-inset-left))
+    max(var(--space-4), env(safe-area-inset-right));
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.game-screen__footer {
+  display: flex;
+  padding-top: var(--space-3);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 var(--space-4);
+  color: var(--color-muted);
+  font-size: var(--font-size-caption);
+  text-align: center;
+}
+
+.game-screen__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--tap-target);
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.playfield {
+  --playfield-min-height: min(15rem, 50dvh);
+  --playfield-max-height: 45rem;
+
+  position: relative;
+  flex: 1 1 0;
+  min-height: var(--playfield-min-height);
+  max-height: var(--playfield-max-height);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-ink);
+}
+
+.playfield__host {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.playfield__error {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  text-align: center;
+}

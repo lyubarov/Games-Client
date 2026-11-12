@@ -1,0 +1,13 @@
+export { DEFAULT_PLAYFIELD, MAX_FRAME_MS, OUTLINE_WIDTH_RATIO } from './constants';
+export type { Bounds, Size, Vec2 } from './geometry/types';
+export { SystemRandom, type RandomSource } from './random';
+export { Shape } from './shapes/Shape';
+export { ShapeDefinition, type ShapeSink } from './shapes/ShapeDefinition';
+export { ShapeFactory } from './shapes/ShapeFactory';
+export { CullSystem } from './simulation/CullSystem';
+export { FallingShape, type ShapeId } from './simulation/FallingShape';
+export { MotionSystem } from './simulation/MotionSystem';
+export { SpawnSystem } from './simulation/SpawnSystem';
+export type { SimulationSettings, System } from './simulation/System';
+export { World } from './simulation/World';
+export { computeStats, METRIC_IDS, type MetricId, type Stats } from './stats';

@@ -1,0 +1,12 @@
+.controls {
+  --controls-max-width: 32rem;
+  --controls-column-min-width: 9.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--controls-column-min-width), 1fr));
+  gap: var(--space-3) var(--space-4);
+  width: 100%;
+  max-width: var(--controls-max-width);
+  margin-inline: auto;
+  padding-top: var(--space-4);
+}
